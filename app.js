@@ -15,6 +15,15 @@ if (counters) {
         // ---- ---- 0 or another number ---- ---- //
         if (value <= 0) {
           value = 0;
+          target
+            .closest('.counter')
+            .querySelector('.counter__btn--minus')
+            .classList.add('disabled');
+        } else {
+          target
+            .closest('.counter')
+            .querySelector('.counter__btn--minus')
+            .classList.remove('disabled');
         }
         target.closest('.counter').querySelector('input').value = value;
       }
