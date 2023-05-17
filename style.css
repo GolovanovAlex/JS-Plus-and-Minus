@@ -3,3 +3,36 @@
   margin: 0;
   box-sizing: border-box;
 }
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+.counter {
+  display: inline-flex;
+  align-items: center;
+  user-select: none;
+  gap: 8px;
+}
+.counter__btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 0 0 30px;
+  height: 30px;
+  font-size: 24px;
+  font-weight: 700;
+  border: 1px solid #000;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.counter__input-box {
+  /* flex: 0 0 30px; */
+}
+.counter__input {
+  width: 100%;
+  text-align: center;
+  background: transparent;
+  border: none;
+}
