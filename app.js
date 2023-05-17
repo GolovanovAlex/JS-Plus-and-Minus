@@ -25,6 +25,18 @@ if (counters) {
             .querySelector('.counter__btn--minus')
             .classList.remove('disabled');
         }
+        if (value >= 9) {
+          value = 9;
+          target
+            .closest('.counter')
+            .querySelector('.counter__btn--plus')
+            .classList.add('disabled');
+        } else {
+          target
+            .closest('.counter')
+            .querySelector('.counter__btn--plus')
+            .classList.remove('disabled');
+        }
         target.closest('.counter').querySelector('input').value = value;
       }
     });

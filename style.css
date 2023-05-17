@@ -11,6 +11,7 @@ body {
 }
 .counter {
   display: inline-flex;
+  justify-content: center;
   align-items: center;
   user-select: none;
   gap: 8px;
@@ -19,24 +20,26 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  flex: 0 0 30px;
-  height: 30px;
-  font-size: 24px;
+  flex: 0 0 60px;
+  height: 60px;
+  font-size: 40px;
   font-weight: 700;
   border: 1px solid #000;
   border-radius: 50%;
   cursor: pointer;
 }
 .counter__input-box {
-  /* flex: 0 0 30px; */
+  flex: 0 0 60px;
 }
 .counter__input {
   width: 100%;
   text-align: center;
   background: transparent;
   border: none;
+  font-size: 40px;
 }
-.counter__btn--minus.disabled {
+.counter__btn--minus.disabled,
+.counter__btn--plus.disabled {
   border: 1px solid #c4c4c4;
   color: #c4c4c4;
   cursor: not-allowed;
